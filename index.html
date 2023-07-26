@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BootstrapIGPost</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" style="background-color: #e3f2fd;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-sm fa-instagram">Instagram</i>
+            </a>
+
+            <div class="container-fluid  justify-content-end">
+
+                <button type="button" class="btn btn-success post" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create New Post
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+
+                                        <div class="mb-3">
+                                            <label for="message-text" class="col-form-label">Caption:</label>
+                                            <textarea class="form-control"
+                                                id="message-text"> Add the caption of your post here</textarea>
+                                            <div><i class="fa fa-lg fa-camera"></i>
+                                                <i class="fa fa-lg fa-map-marker"></i>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-gear-fill"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+
+                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+
+                                <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <ul class="nav nav-tabs justify-content-center mb-2 mt-2" id="myTab" role="tablist">
+
+                    <li class="nav-item" role="presentation">
+
+                        <button class="nav-link active" id="threeColumns-tab" data-bs-toggle="tab"
+                            data-bs-target="#threeColumns" type="button" role="tab" aria-controls="threeColumns"
+                            aria-selected="true">
+                            <i class="fa fal fa-th" style="color: #0f5ee6;"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="single-tab" data-bs-toggle="tab" data-bs-target="#single"
+                            type="button" role="tab" aria-controls="single">
+                            <i class="fa fas fa-square" style="color: #606366;">
+                            </i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="threeColumns" role="tabpanel" aria-labelledby="threeColumns-tab">
+                <div class="col-lg-4 col-sm-12">
+
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/11/34/skyline-1869214_1280.jpg"
+                        class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="https://cdn.pixabay.com/photo/2018/05/04/16/50/cat-3374422_1280.jpg"
+                        class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="https://cdn.pixabay.com/photo/2018/01/19/11/13/abstract-3092201_1280.jpg"
+                        class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="https://cdn.pixabay.com/photo/2014/09/11/18/23/tower-bridge-441853_1280.jpg"
+                        class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="https://cdn.pixabay.com/photo/2016/01/19/19/26/amsterdam-1150319_1280.jpg"
+                        class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="https://cdn.pixabay.com/photo/2019/12/22/17/13/french-bulldog-4713013_1280.jpg"
+                        class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="https://cdn.pixabay.com/photo/2019/01/25/18/05/deer-3955031_960_720.jpg"
+                        class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="https://cdn.pixabay.com/photo/2018/04/29/01/15/coast-3358815_1280.jpg"
+                        class="img-fluid img-thumbnail">
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <img src="https://cdn.pixabay.com/photo/2019/06/29/17/35/tree-4306636_1280.jpg"
+                        class="img-fluid img-thumbnail">
+                </div>
+            </div>
+            <div id="single" class="single" aria-labelledby="single">
+
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col d-flex justify-content-center">
+                            <div class="card">
+                                <div class="text">Lighthouse
+                                    <span class="date">07.25.23</span>
+                                </div>
+                                <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_1280.jpg"
+                                    alt="lighthouse" style="width:100%">
+                                <h4><b>275 Likes</b></h4>
+                                <p>Such a peaceful night</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center">
+                            <div class="card">
+                                <div class="text">Purple
+                                    <span class="date">07.03.23</span>
+                                </div>
+                                <img src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_1280.jpg"
+                                    alt="purple" style="width:100%">
+                                <h4><b>111 Likes</b></h4>
+                                <p>Purple</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col d-flex justify-content-center">
+                            <div class="card">
+                                <div class="text">Nature Is Beautiful
+                                    <span class="date">05.05.2020</span>
+                                </div>
+                                <img src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022_1280.jpg"
+                                    alt="water lilly" style="width:100%">
+                                <h4><b>132 Likes</b></h4>
+                                <p>Water Lilly</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+
+</html>
