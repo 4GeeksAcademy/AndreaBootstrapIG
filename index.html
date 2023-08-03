@@ -28,75 +28,96 @@
                 </button>
 
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle m-1" type="button" id="dropdownMenuButton"
-                        data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-cog"></i></button>
+                    <button 
+                        class="btn btn-secondary dropdown-toggle m-1" 
+                        type="button" 
+                        id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false">
+                        <i class="fa fa-cog"></i>
+                    </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                         <a class="dropdown-item" href="#">
+                                Profile
+                        </a>
+                        </li>
+                        <li>
+                        <a class="dropdown-item" href="#">Accesibility</a>
+                        </li>
+                        <li>
+                         <a class="dropdown-item" href="#">
+                            Privacy and Data
+                        </a>
+                        </li>
                         <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                        <li>
+                        <a class="dropdown-item" href="#">
+                            Logout
+                        </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         </div>
     </nav>
-
-
-    <!-- start of Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Post</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Create New Post
+                    </h1>
+                    <button 
+                    type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close Modal Button">
+                    </button>
                 </div>
                 <div class="modal-body">
                     <form>
-
                         <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Caption:</label>
+                            <label for="message-text" class="col-form-label">
+                                Caption:
+                            </label>
                             <textarea class="form-control"
-                                id="message-text"> Add the caption of your post here</textarea>
-                            <div><i class="fa fa-lg fa-camera"></i>
-                                <i class="fa fa-lg fa-map-marker"></i>
+                                id="message-text"> 
+                                Add the caption of your post here
+                            </textarea>
+                            <div>
+                                <i class="fa fa-lg fa-camera">
+                                </i>
+                                <i class="fa fa-lg fa-map-marker">
+                                </i>
                             </div>
                         </div>
-
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Publish</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        Publish
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-
-
-
     <div class="container">
-        <!-- start of two buttons -->
         <div class="row">
             <div class="col d-flex justify-content-center">
-                <button class="btn" data-bs-toggle="collapse" data-bs-target="#threeColumns-tab" type="radio"
-                    aria-expanded="false">
+                <a class="btn" href="threeColumns-tab">
                     <i class="fa fal fa-th" style="color: #0f5ee6;"></i>
-                </button>
-                <button class="btn" data-bs-toggle="collapse" data-bs-target="#singleColumbTab" type="radio"
-                    aria-expanded="false">
+                </a>
+                <a class="btn" href="singleColumbTab">
                     <i class="fa fas fa-square" style="color: #606366;">
                     </i>
-                </button>
+                </a>
             </div>
         </div>
-        <!-- ending of two buttons -->
-        <!-- beginning of three column tab -->
         <div id="threeColumns-tab" class="container collapse.show">
             <div class="row">
                 <div class="col-lg-4 col-sm-12">
-
                     <img src="https://cdn.pixabay.com/photo/2016/11/29/11/34/skyline-1869214_1280.jpg"
                         class="img-fluid img-thumbnail">
                 </div>
@@ -134,7 +155,6 @@
                 </div>
             </div>
         </div>
-        <!-- end of three column tab -->
         <div id="singleColumbTab" class="collapse">
             <div class="container">
                 <div class="row">
@@ -183,6 +203,4 @@
             </div>
         </div>
 </body>
-
-
 </html>
